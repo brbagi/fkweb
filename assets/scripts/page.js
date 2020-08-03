@@ -18,19 +18,19 @@ const checkUserData = async () => {
 }
 
 const openLoading = async () => {
-    const loadingPage = await fetch('/component/pages/loading.html')
+    const loadingPage = await fetch('component/pages/loading.html')
     const loadingPageHtml = await loadingPage.text()
     const container = document.querySelector('.container').innerHTML = loadingPageHtml
 }
 
 const openStartPage = async () => {
-    const startPage = await fetch('/component/pages/start.html')
+    const startPage = await fetch('component/pages/start.html')
     const startPageHtml = await startPage.text()
     document.querySelector('.container').innerHTML = startPageHtml
 }
 
 const openMainPage = async () => {
-    const mainPage = await fetch('/component/pages/main.html')
+    const mainPage = await fetch('component/pages/main.html')
     const mainPageHtml = await mainPage.text()
     document.querySelector('.container').innerHTML = mainPageHtml
     loadActByDate(formatDate(Date.now()))
