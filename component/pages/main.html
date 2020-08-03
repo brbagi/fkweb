@@ -1,0 +1,45 @@
+<div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <p class="image is-4by3">
+            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+        </p>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>
+<section>
+    <h4 class="fk-title"><span>#</span>FastabiqulKhoirot</h4>
+    <div class="date level">
+        <div class="level-left">
+            <h2 id="date-header" class="date title is-1">12 Juni 2020</h2>
+        </div>
+        <div class="level-right">
+            <!-- <ion-icon class="bt-icon" name="calendar"></ion-icon>
+            <input type="date" id="myDate" value="2014-02-09"> -->
+            <p class="level-item">
+                <input type="date" id="date-input" value="">
+                <a onclick="dateChange()"><ion-icon class="icon" name="arrow-forward"></ion-icon></a>
+            </p>
+            <p class="level-item">
+            </p>
+            <!-- <div class="field">
+                <p class="control has-icons-right">
+                  <input class="input" type="date">
+                  <span class="icon is-small is-right">
+                    <ion-icon name="calendar"></ion-icon>
+                  </span>
+                </p>
+            </div> -->
+        </div>
+    </div>
+    <h2 class="title is-2 greeting"><span id="user-name">Fulan Bin Fulan</span> <span id="user-greeting">Apa yang ingin kamu lakukan hari ini?</span></h2>
+    <p class="bigger-p">berlomba lombalah mengerjakan yang bermanfaat, catat dan organisir dengan mudah apa saja
+        yang ingin kamu lakukan di hari-harimu</p>
+</section>
+<section id="act-container" class="columns is-mobile is-multiline">
+    <article id="new-card-article" class="column is-full-mobile is-one-third-tablet is-one-quarter-desktop is-one-quarter-widescreen is-one-quarter-fullhd">
+        <div class="add-new">
+            <a><ion-icon class="add-icon" name="add-circle" onclick="openNewActForm()"></ion-icon></a>
+        </div>
+    </article>
+</section>

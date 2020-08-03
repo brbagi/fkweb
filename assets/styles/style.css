@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* text styles */
+p {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+.bigger-p {
+    font-size: 18px;
+}
+
+.title {
+    color: black;
+}
+
+.fk-title-bigger {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.fk-title-bigger span {
+    font-family: 'Montserrat', sans-serif;
+    color: #2CECA7;
+}
+
+.fk-title {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-weight: 700;
+}
+
+.fk-title span {
+    font-family: 'Montserrat', sans-serif;
+    color: #2CECA7;
+}
+
+.greeting {
+    font-weight: 400;
+    font-size: 38px;
+}
+
+.welcome {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+}
+
+.sub-welcome {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+
+.date {
+    font-weight: 700;
+}
+
+
+
+footer a {
+    color: #16AC76;
+}
+
+footer a:hover {
+    color: #2CECA7;
+}
+
+.loading-section h4 {
+    color: white;
+    font-size: 32px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+.loading-section p {
+    color: white;
+    max-width: 700px;
+    margin: 0px 24px;
+}
+
+
+
+/* background styles */
+.background {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    background-image: url('/assets/images/backgrounds/1.png');
+    z-index: -100;
+}
+
+.background div {
+    height: 100%;
+    width: 100%;
+    background: white;
+    opacity: 0.75;
+}
+
+
+
+
+/* root positioning */
+.container {
+    max-width: 1048px;
+    padding-top: 94px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+#act-container {
+    margin-top: 48px;
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    ;
+    margin-top: 94px;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 32px 0px;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+
+.start-section {
+    padding-top: 64px;
+    padding-bottom: 94px;
+}
+
+.loading-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.loading-section div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* card */
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 14px;
+    padding: 14px;
+    height: 100%;
+}
+
+.add-new {
+    background: black;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 14px;
+    padding: 14px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 214px;
+}
+
+.add-new .add-icon {
+    color: white;
+    font-size: 64px;
+}
+
+.new-form {
+    background: black;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 14px;
+    padding: 12px;
+}
+
+.new-form .level {
+    margin-bottom: 0px;
+}
+
+.card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+    margin-top: 24px;
+    margin-bottom: 14px;
+    margin-right: 8px;
+    margin-left: 8px;
+    overflow-wrap: break-word;
+}
+
+.card p {
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-bottom: 12px;
+    overflow-wrap: break-word;
+}
+
+.lclose {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+.lclosew {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 2px;
+}
+
+
+
+/* text-area */
+.new-form textarea {
+    font-size: 14px !important;
+    padding: 6px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+.new-form textarea::placeholder {
+    color: #ffffff;
+}
+
+.new-form .area-title {
+    font-size: 24px !important;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 2px;
+    font-weight: 700;
+    line-height: 100% !important;
+}
+
+
+
+/* input */
+input {
+    width: 100%;
+    padding: 18px 24px;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    font-size: 16px;
+    border-radius: 12px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+input:focus {
+    outline: none
+}
+
+#date-input {
+    padding: 12px 24px;
+}
+
+
+
+
+/* button */
+.bt-icon {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 24px;
+    margin-left: 12px;
+}
+
+.icon {
+    font-size: 32px;
+    margin-left: 18px;
+}
+
+.btn-add-new {
+    background-color: white;
+    margin: 12px 6px 6px 6px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 4px;
+    padding: 4px 0px;
+    font-size: 14px;
+}
+
+.btn-add-new:hover {
+    background-color: white;
+
+}
+
+.btn-mulai {
+    color: white;
+    border-radius: 12px;
+    background-color: black;
+    padding: 9px 64px;
+    margin-top: 28px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+.btn-mulai:focus {
+    outline: none;
+}
+
+
+
+
+/* toogle */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 47px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFBABA;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    left: 0px;
+    bottom: 0px;
+    background-color: #EC5252;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #ABFFE1;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px);
+    background-color: #2CECA7;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
