@@ -21,9 +21,9 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    new RegExp('/assets/scripts/'),
+    new RegExp('/assets/images'),
     workbox.strategies.staleWhileRevalidate({
-        cacheName: 'scripts'
+        cacheName: 'images'
     })
 );
 
