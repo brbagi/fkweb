@@ -22,7 +22,7 @@ const openNewActForm = () => {
         <textarea id="desc-area" class="textarea has-fixed-size" rows="3"
             placeholder="Descriptions"
             maxlength="75"></textarea>
-        <a><div class="btn-add-new" onclick="addNewAct()">Tambah</div></a>
+        <a><div class="btn-add-new" onclick="addNewAct()">Submit</div></a>
     </div>
     `
 }
