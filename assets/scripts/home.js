@@ -18,9 +18,9 @@ const openNewActForm = () => {
             </div>
         </div>
         <textarea id="title-area" class="textarea has-fixed-size area-title" rows="2" maxlength="30"
-            placeholder="Tulis Judul kegiatan disini"></textarea>
+            placeholder="Your Activity Title"></textarea>
         <textarea id="desc-area" class="textarea has-fixed-size" rows="3"
-            placeholder="Tuliskan deskripsi dari kegiatan yang ingin kamu lakukan tersebut disini"
+            placeholder="Descriptions"
             maxlength="75"></textarea>
         <a><div class="btn-add-new" onclick="addNewAct()">Tambah</div></a>
     </div>
@@ -118,9 +118,9 @@ const dateHeaderChange = () => {
 
     const greeting = document.getElementById('user-greeting');
     if(currentDate === originalDate) {
-        greeting.innerHTML = 'Apa yang ingin kamu lakukan hari ini?'
+        greeting.innerHTML = 'What do you want to do today?'
     } else {
-        greeting.innerHTML = 'Rencanakan dan catat aktifitas di hari-harimu!'
+        greeting.innerHTML = 'Plan and record activities on your days!'
     }
 }
 
